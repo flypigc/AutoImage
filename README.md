@@ -33,12 +33,6 @@ CMD:
 ask-codex.cmd
 ```
 
-Chinese CMD launcher:
-
-```cmd
-启动工作流.cmd
-```
-
 ## Interactive Menu
 
 The menu includes:
