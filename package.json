@@ -1,0 +1,28 @@
+{
+  "name": "codex-workflow-terminal-ui",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Terminal UI helpers for the Codex workflow scripts.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "codex",
+    "powershell",
+    "terminal-ui",
+    "image-generation",
+    "batch-processing"
+  ],
+  "scripts": {
+    "check": "powershell -NoProfile -ExecutionPolicy Bypass -File ./tools/Check-Workflow.ps1 && powershell -NoProfile -ExecutionPolicy Bypass -File ./tools/Invoke-WorkflowTests.ps1",
+    "test": "powershell -NoProfile -ExecutionPolicy Bypass -File ./tools/Invoke-WorkflowTests.ps1",
+    "release:check": "powershell -NoProfile -ExecutionPolicy Bypass -File ./tools/Check-Release.ps1",
+    "smoke:progress": "node cli-progress-bridge.js < ./tools/progress-smoke.jsonl",
+    "clean:smoke": "powershell -NoProfile -ExecutionPolicy Bypass -File ./tools/Clean-SmokeRuns.ps1 -Force"
+  },
+  "dependencies": {
+    "cli-progress": "^3.12.0",
+    "ora": "^9.4.1"
+  }
+}

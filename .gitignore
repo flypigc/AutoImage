@@ -1,0 +1,23 @@
+node_modules/
+
+# Runtime outputs
+runs/
+codex_cli_runs/
+pic/
+cache/*
+!cache/.gitkeep
+*.log
+*.tmp
+
+# Local settings and secrets
+Start-CodexWorkflow.config.json
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,5 @@
+first image
+---
+second image [FAIL]
+---
+third image

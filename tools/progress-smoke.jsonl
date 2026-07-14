@@ -1,0 +1,6 @@
+{"type":"spinner:start","text":"Starting workflow smoke test"}
+{"type":"spinner:succeed","text":"Spinner ready"}
+{"type":"serial","totalLabel":"Smoke serial","totalCompleted":1,"totalCount":2,"subLabel":"Step one","subCompleted":1,"subCount":1,"status":"ok"}
+{"type":"serial","totalLabel":"Smoke serial","totalCompleted":2,"totalCount":2,"subLabel":"Step two","subCompleted":1,"subCount":1,"status":"done"}
+{"type":"concurrent","totalCount":2,"completedCount":1,"successCount":1,"failedCount":0,"queuedCount":0,"currentStatus":"one running","jobs":[{"Index":1,"JobName":"job-001","Status":"success"},{"Index":2,"JobName":"job-002","Status":"running"}]}
+{"type":"clear"}
